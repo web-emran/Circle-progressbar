@@ -1,0 +1,57 @@
+@keyframes loader {
+	12.5% {
+		clip-path: polygon(100% 0, 100% 0%, 100% 100%, 0 100%, 0 0, 50% 0, 50% 50%);
+	}
+
+	37.5% {
+		clip-path: polygon(100% 100%, 100% 0%, 100% 100%, 0 100%, 0 0, 50% 0, 50% 50%);
+	}
+
+	62.5% {
+		clip-path: polygon(0% 100%, 0% 100%, 0% 100%, 0% 100%, 0 0, 50% 0, 50% 50%);
+	}
+
+	87.5% {
+		clip-path: polygon(0% 0%, 0% 0%, 0% 0%, 0% 0%, 0 0, 50% 0, 50% 50%);
+	}
+
+	100% {
+		clip-path: polygon(50% 0%, 50% 0%, 50% 0%, 0% 0%, 0 0, 50% 0, 50% 50%);
+	}
+}
+
+.loader {
+	width: 220px;
+	height: 220px;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+	font-family: 'Open Sans', sans-serif;
+	border-radius: 50%; 
+}
+
+.ticker {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: #e44a4a;
+	animation: loader 20s linear;
+	animation-fill-mode: forwards;
+	clip-path: polygon(50% 0, 100% 0, 100% 100%, 0 100%, 0 0, 50% 0, 50% 50%);
+}
+
+.loader .count {
+	color: #e44a4a;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	font-size: 100px;
+	font-weight: bold; 
+	text-align: center;
+	transform: translateY(-50%);
+}
+
+.loader .ticker .count {color: #fff}
