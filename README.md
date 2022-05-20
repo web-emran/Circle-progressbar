@@ -6,3 +6,7 @@ Circular Progress Bar is a popular web element that is mainly used on business o
 
 Click [Here](https://codepen.io/emrankhan016/full/ZerpYV) to see demo and Edit
 
+Feel free to create an issue if you find any bug. You can also contribute if you want to. :)
+
+
+
